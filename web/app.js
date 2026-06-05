@@ -1,6 +1,5 @@
 // 数据文件路径（GitHub Pages 部署后相对于 web/ 目录）
-const DATA_URL = "../data/commodities.json";
-
+const DATA_URL = `../data/commodities.json?t=${Date.now()}`;
 // ECharts 公共配置
 const CHART_THEME = {
   backgroundColor: "transparent",
