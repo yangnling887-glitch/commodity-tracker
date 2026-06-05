@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>大宗商品行情追踪</title>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>大宗商品行情追踪</h1>
+      <span id="update-time" class="update-time">数据加载中...</span>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div id="loading" class="loading-screen">
+      <div class="spinner"></div>
+      <p>正在加载数据...</p>
+    </div>
+    <div id="error-screen" class="error-screen hidden">
+      <p>⚠️ 数据加载失败，请刷新页面重试。</p>
+    </div>
+    <div id="commodity-grid" class="commodity-grid hidden"></div>
+  </main>
+
+  <!-- 品种卡片模板 -->
+  <template id="card-template">
+    <article class="commodity-card">
+      <div class="card-header">
+        <div class="card-title-area">
+          <h2 class="commodity-name"></h2>
+          <span class="commodity-type-badge"></span>
+        </div>
+        <div class="price-area">
+          <span class="latest-price"></span>
+          <span class="price-unit"></span>
+          <span class="price-change"></span>
+        </div>
+      </div>
+
+      <!-- 价格趋势图 -->
+      <div class="chart-section">
+        <div class="chart-section-title">价格趋势</div>
+        <div class="tab-bar price-tabs">
+          <button class="tab-btn active" data-range="1m">近1月</button>
+          <button class="tab-btn" data-range="3m">近3月</button>
+          <button class="tab-btn" data-range="6m">近半年</button>
+          <button class="tab-btn" data-range="1y">近1年</button>
+        </div>
+        <div class="chart-container price-chart"></div>
+      </div>
+
+      <!-- 期货专属：持仓量 & 库存 -->
+      <div class="futures-section hidden">
+        <div class="chart-section">
+          <div class="chart-section-title">持仓量变化（主力合约）</div>
+          <div class="chart-container oi-chart"></div>
+        </div>
+        <div class="chart-section">
+          <div class="chart-section-title">交易所库存变化（上期所仓单）</div>
+          <div class="chart-container inventory-chart"></div>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #222635;
+  --border: #2e3248;
+  --accent: #4f8ef7;
+  --accent2: #7c5cfc;
+  --green: #26c281;
+  --red: #e05c5c;
+  --text: #e4e6f0;
+  --text2: #8b90a8;
+  --radius: 12px;
+  --shadow: 0 2px 16px rgba(0,0,0,0.4);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+header h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.update-time {
+  font-size: 0.78rem;
+  color: var(--text2);
+}
+
+/* ── Layout ── */
+main { max-width: 1400px; margin: 0 auto; padding: 24px; }
+
+.commodity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 20px;
+}
+
+/* ── Card ── */
+.commodity-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s;
+}
+.commodity-card:hover { border-color: var(--accent); }
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.card-title-area { display: flex; align-items: center; gap: 10px; }
+.commodity-name { font-size: 1.1rem; font-weight: 600; }
+
+.commodity-type-badge {
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.badge-futures {
+  background: rgba(79,142,247,0.15);
+  color: var(--accent);
+  border: 1px solid rgba(79,142,247,0.3);
+}
+.badge-spot {
+  background: rgba(124,92,252,0.15);
+  color: #a988ff;
+  border: 1px solid rgba(124,92,252,0.3);
+}
+
+.price-area { text-align: right; }
+.latest-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.price-unit { font-size: 0.75rem; color: var(--text2); margin-left: 4px; }
+.price-change {
+  display: block;
+  font-size: 0.82rem;
+  margin-top: 2px;
+  font-weight: 500;
+}
+.price-change.up { color: var(--green); }
+.price-change.down { color: var(--red); }
+.price-change.flat { color: var(--text2); }
+
+/* ── Chart sections ── */
+.chart-section { margin-top: 16px; }
+.chart-section-title {
+  font-size: 0.78rem;
+  color: var(--text2);
+  font-weight: 500;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.tab-btn {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text2);
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.tab-btn:hover { color: var(--text); border-color: var(--accent); }
+.tab-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.chart-container {
+  width: 100%;
+  height: 180px;
+  background: var(--surface2);
+  border-radius: 8px;
+}
+.oi-chart, .inventory-chart { height: 140px; }
+
+.futures-section { margin-top: 4px; }
+
+/* ── Loading / Error ── */
+.loading-screen, .error-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  gap: 16px;
+  color: var(--text2);
+}
+.spinner {
+  width: 36px; height: 36px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.hidden { display: none !important; }
+
+/* ── No-data placeholder ── */
+.no-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 0.78rem;
+  color: var(--text2);
+}
+
+/* ── Responsive ── */
+@media (max-width: 680px) {
+  .commodity-grid { grid-template-columns: 1fr; }
+  .card-header { flex-direction: column; gap: 8px; }
+  .price-area { text-align: left; }
+  main { padding: 12px; }
+}

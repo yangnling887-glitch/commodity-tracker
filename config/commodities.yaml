@@ -1,0 +1,61 @@
+commodities:
+  - id: gold
+    name: 黄金
+    name_en: Gold
+    unit: 元/克
+    has_futures: true
+    exchange: SHFE
+    symbol: AU0       # 新浪财经主力合约代码
+    shfe_symbol: au   # 上期所品种代码（用于仓单查询）
+
+  - id: silver
+    name: 白银
+    name_en: Silver
+    unit: 元/千克
+    has_futures: true
+    exchange: SHFE
+    symbol: AG0
+    shfe_symbol: ag
+
+  - id: copper
+    name: 铜
+    name_en: Copper
+    unit: 元/吨
+    has_futures: true
+    exchange: SHFE
+    symbol: CU0
+    shfe_symbol: cu
+
+  - id: aluminum
+    name: 铝
+    name_en: Aluminum
+    unit: 元/吨
+    has_futures: true
+    exchange: SHFE
+    symbol: AL0
+    shfe_symbol: al
+
+  - id: tin
+    name: 锡
+    name_en: Tin
+    unit: 元/吨
+    has_futures: true
+    exchange: SHFE
+    symbol: SN0
+    shfe_symbol: sn
+
+  - id: tungsten
+    name: 钨
+    name_en: Tungsten
+    unit: 元/吨
+    has_futures: false
+    spot_source: shengyi   # 生意社现货价格
+    spot_name: 钨精矿
+
+  - id: rare_earth
+    name: 稀土（氧化镨钕）
+    name_en: Rare Earth
+    unit: 万元/吨
+    has_futures: false
+    spot_source: shengyi
+    spot_name: 氧化镨钕

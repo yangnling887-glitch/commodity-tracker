@@ -1,0 +1,100 @@
+{
+  "_meta": {
+    "updated_at": "2026-06-05 18:30:00",
+    "updated_at_ts": 1749127800,
+    "commodity_count": 7,
+    "errors": [],
+    "note": "此为示例数据，GitHub Actions 运行后将替换为真实数据"
+  },
+  "gold": {
+    "id": "gold",
+    "name": "黄金",
+    "name_en": "Gold",
+    "unit": "元/克",
+    "has_futures": true,
+    "exchange": "SHFE",
+    "latest_price": 758.2,
+    "price_change_pct": 0.45,
+    "price_history": [],
+    "open_interest": [],
+    "inventory": []
+  },
+  "silver": {
+    "id": "silver",
+    "name": "白银",
+    "name_en": "Silver",
+    "unit": "元/千克",
+    "has_futures": true,
+    "exchange": "SHFE",
+    "latest_price": 8420,
+    "price_change_pct": -0.32,
+    "price_history": [],
+    "open_interest": [],
+    "inventory": []
+  },
+  "copper": {
+    "id": "copper",
+    "name": "铜",
+    "name_en": "Copper",
+    "unit": "元/吨",
+    "has_futures": true,
+    "exchange": "SHFE",
+    "latest_price": 78650,
+    "price_change_pct": 1.12,
+    "price_history": [],
+    "open_interest": [],
+    "inventory": []
+  },
+  "aluminum": {
+    "id": "aluminum",
+    "name": "铝",
+    "name_en": "Aluminum",
+    "unit": "元/吨",
+    "has_futures": true,
+    "exchange": "SHFE",
+    "latest_price": 20180,
+    "price_change_pct": 0.08,
+    "price_history": [],
+    "open_interest": [],
+    "inventory": []
+  },
+  "tin": {
+    "id": "tin",
+    "name": "锡",
+    "name_en": "Tin",
+    "unit": "元/吨",
+    "has_futures": true,
+    "exchange": "SHFE",
+    "latest_price": 265000,
+    "price_change_pct": -0.75,
+    "price_history": [],
+    "open_interest": [],
+    "inventory": []
+  },
+  "tungsten": {
+    "id": "tungsten",
+    "name": "钨",
+    "name_en": "Tungsten",
+    "unit": "元/吨",
+    "has_futures": false,
+    "exchange": "",
+    "latest_price": 142000,
+    "price_change_pct": 0.0,
+    "price_history": [],
+    "open_interest": [],
+    "inventory": []
+  },
+  "rare_earth": {
+    "id": "rare_earth",
+    "name": "稀土（氧化镨钕）",
+    "name_en": "Rare Earth",
+    "unit": "万元/吨",
+    "has_futures": false,
+    "exchange": "",
+    "latest_price": 43.5,
+    "price_change_pct": 2.1,
+    "price_history": [],
+    "open_interest": [],
+    "inventory": []
+  }
+}
