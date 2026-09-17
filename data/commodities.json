@@ -6,13 +6,9 @@
     "unit": "元/克",
     "has_futures": true,
     "exchange": "SHFE",
-    "latest_price": 940.52,
-    "price_change_pct": 0.88,
+    "latest_price": 935.0,
+    "price_change_pct": -0.59,
     "price_history": [
-      {
-        "date": "2025-09-16",
-        "price": 844.58
-      },
       {
         "date": "2025-09-17",
         "price": 837.64
@@ -980,13 +976,13 @@
       {
         "date": "2026-09-16",
         "price": 940.52
+      },
+      {
+        "date": "2026-09-17",
+        "price": 935.0
       }
     ],
     "open_interest": [
-      {
-        "date": "2025-09-16",
-        "value": 225325.0
-      },
       {
         "date": "2025-09-17",
         "value": 222304.0
@@ -1954,6 +1950,10 @@
       {
         "date": "2026-09-16",
         "value": 177903.0
+      },
+      {
+        "date": "2026-09-17",
+        "value": 184505.0
       }
     ],
     "inventory": []
@@ -1965,13 +1965,9 @@
     "unit": "元/千克",
     "has_futures": true,
     "exchange": "SHFE",
-    "latest_price": 15832.0,
-    "price_change_pct": 2.46,
+    "latest_price": 15593.0,
+    "price_change_pct": -1.51,
     "price_history": [
-      {
-        "date": "2025-09-16",
-        "price": 10134.0
-      },
       {
         "date": "2025-09-17",
         "price": 9933.0
@@ -2939,13 +2935,13 @@
       {
         "date": "2026-09-16",
         "price": 15832.0
+      },
+      {
+        "date": "2026-09-17",
+        "price": 15593.0
       }
     ],
     "open_interest": [
-      {
-        "date": "2025-09-16",
-        "value": 417082.0
-      },
       {
         "date": "2025-09-17",
         "value": 388338.0
@@ -3913,6 +3909,10 @@
       {
         "date": "2026-09-16",
         "value": 204304.0
+      },
+      {
+        "date": "2026-09-17",
+        "value": 206770.0
       }
     ],
     "inventory": []
@@ -3924,13 +3924,9 @@
     "unit": "元/吨",
     "has_futures": true,
     "exchange": "SHFE",
-    "latest_price": 107740.0,
-    "price_change_pct": 0.66,
+    "latest_price": 108500.0,
+    "price_change_pct": 0.71,
     "price_history": [
-      {
-        "date": "2025-09-16",
-        "price": 80880.0
-      },
       {
         "date": "2025-09-17",
         "price": 80560.0
@@ -4898,13 +4894,13 @@
       {
         "date": "2026-09-16",
         "price": 107740.0
+      },
+      {
+        "date": "2026-09-17",
+        "price": 108500.0
       }
     ],
     "open_interest": [
-      {
-        "date": "2025-09-16",
-        "value": 165216.0
-      },
       {
         "date": "2025-09-17",
         "value": 179082.0
@@ -5872,6 +5868,10 @@
       {
         "date": "2026-09-16",
         "value": 165357.0
+      },
+      {
+        "date": "2026-09-17",
+        "value": 159506.0
       }
     ],
     "inventory": []
@@ -5883,13 +5883,9 @@
     "unit": "元/吨",
     "has_futures": true,
     "exchange": "SHFE",
-    "latest_price": 24185.0,
-    "price_change_pct": 0.33,
+    "latest_price": 24225.0,
+    "price_change_pct": 0.17,
     "price_history": [
-      {
-        "date": "2025-09-16",
-        "price": 20985.0
-      },
       {
         "date": "2025-09-17",
         "price": 20940.0
@@ -6857,13 +6853,13 @@
       {
         "date": "2026-09-16",
         "price": 24185.0
+      },
+      {
+        "date": "2026-09-17",
+        "price": 24225.0
       }
     ],
     "open_interest": [
-      {
-        "date": "2025-09-16",
-        "value": 273333.0
-      },
       {
         "date": "2025-09-17",
         "value": 275958.0
@@ -7831,6 +7827,10 @@
       {
         "date": "2026-09-16",
         "value": 236878.0
+      },
+      {
+        "date": "2026-09-17",
+        "value": 249725.0
       }
     ],
     "inventory": []
@@ -7842,13 +7842,9 @@
     "unit": "元/吨",
     "has_futures": true,
     "exchange": "SHFE",
-    "latest_price": 398430.0,
-    "price_change_pct": 1.41,
+    "latest_price": 401680.0,
+    "price_change_pct": 0.82,
     "price_history": [
-      {
-        "date": "2025-09-16",
-        "price": 272730.0
-      },
       {
         "date": "2025-09-17",
         "price": 272540.0
@@ -8816,13 +8812,13 @@
       {
         "date": "2026-09-16",
         "price": 398430.0
+      },
+      {
+        "date": "2026-09-17",
+        "price": 401680.0
       }
     ],
     "open_interest": [
-      {
-        "date": "2025-09-16",
-        "value": 24273.0
-      },
       {
         "date": "2025-09-17",
         "value": 23007.0
@@ -9790,6 +9786,10 @@
       {
         "date": "2026-09-16",
         "value": 32491.0
+      },
+      {
+        "date": "2026-09-17",
+        "value": 30818.0
       }
     ],
     "inventory": []
@@ -9821,8 +9821,8 @@
     "inventory": []
   },
   "_meta": {
-    "updated_at": "2026-09-16 15:18:25",
-    "updated_at_ts": 1789571905,
+    "updated_at": "2026-09-17 15:25:40",
+    "updated_at_ts": 1789658740,
     "commodity_count": 7,
     "errors": []
   }
